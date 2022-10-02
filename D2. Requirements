@@ -59,6 +59,31 @@ requirements. While writing the requirements, focus on capabilities needed and n
 Grading criteria (2 points): The list should be comprehensive (remember that you are not expected to implement all the requirements by the end of the course but you 
 should list them). Follow the same pattern to describe all the requirements. The list of requirements should be coherent with the previous sections.
 
+
+1. The interface shall prompt the user for their hourly wage upon application startup.
+          	1.1 The hourly wage shall be enterable in the form of U.S. dollars.
+          	1.2 The hourly wage shall have a minimum value of $0.00 and a maximum value of $999.00.
+2. The display shall show a simple timer.
+          	2.1 The timer shall display hours, seconds, and minutes.
+          	2.2 The timer shall be initialized to 00:00:00.
+          	2.3 The maximum values for the sections of the timer shall be as follows: 99 hours, 59 minutes, 59 seconds.
+          	2.4 The timer shall count up from the initial time once the user starts the clock.
+          	2.5 The timer shall stop counting once the user stops the clock.
+          	2.6 The last time reached before the clock was stopped shall remain visible on the screen until the timer is started or reset.
+3. The interface shall provide users a way to start, pause, stop, or reset the timer.
+          	3.1 The users shall be able to interact with the timer through labeled buttons on the display.
+          	3.2 The start button shall begin the timer count from its most recent value.
+          	3.3 The pause button shall temporarily stop the timer at its current value until the user starts the timer again.
+          	3.4 The stop button shall permanently stop the timer at its current value.
+          	3.5 The reset button shall return the timer to its initial value.
+4. The application shall calculate the user’s earnings per second.
+          	4.1 The user’s earnings per second shall be calculated as the user’s earnings per hour divided by 60.
+5. The display shall show the user a total for their earnings.
+          	5.1 The earnings display shall increment with every second that passes on the clock.
+6. The application shall be accessible as a website and as a mobile app.
+
+
+
 **Non-functional requirements**
 Make a numbered list of non-functional requirements that are important for your software. Explain their importance. Follow the terminology of ISO/IEC 25010:2011. 
 For each non-functional requirement, give an objective goal/measurement in order to provide verifiability for the requirement. You can find more details at the 
