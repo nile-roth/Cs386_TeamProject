@@ -1,0 +1,72 @@
+:root {
+	--brown: #451a1a;
+	--green: #85bb65;
+	--mnygreen: #a7b89a;
+	--grey: #595656;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 
+}
+
+body {
+	background: var(--mnygreen);
+	color: var(--brown);
+}
+
+.watch{
+	text-align: center;
+	background-color: var(--grey);
+	width: 100%;
+	max-width: 480px;
+	margin: 64px;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.mainTitle {
+	text-align: center;
+	font-size: 10rem;
+}
+
+.wage{
+	text-align: center;
+	background-color: var(--green);
+	width: 100%;
+	max-width: 480px;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.time {
+	font-size: 6rem;
+	margin-bottom: 1rem;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls button {
+	user-select: none;
+	cursor: pointer;
+	color: var(--green);
+	background-color: var(--brown);
+	margin: 0 10px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: 0.4s;
+}
+
+button:hover {
+	opacity: 0.5;
+}
+
+button:active {
+	background-color: var(--green);
+	color: var(--brown);
+}
