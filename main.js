@@ -1,15 +1,18 @@
 //Variables
 const time_num = document.querySelector('.watch .time');
+const wage_num = document.querySelector('.watch .wage');
 const pause_btn = document.getElementById("pause");
 const end_btn = document.getElementById("end");
 const reset_btn = document.getElementById("Reset");
 const start_btn = document.getElementById("start");
+const wage = document.getElementById("wage").value;
 
 let seconds = 0;
 let interval = null;
+let cps = (wage * 100) / 3600;
 
 //Event Listeners
-stop_btn.addEventListener("click", stop);
+pause_btn.addEventListener("click", pause);
 reset_btn.addEventListener("click", reset);
 
 //counting seconds
@@ -31,6 +34,14 @@ function timer () {
 function wage () {
 	seconds++;
 	
+	let secs = seconds % 60;
+	let cents = secs * cps ;
+	
+	if (cents >= 100) {
+		dols++;
+		cents = 0;
+	}
+	wage_num.innerText = '${dols}.${cents}';
 	
 }
 
@@ -67,5 +78,3 @@ function start () {
 	}
 	interval = setInterval(timer,500);
 }
-
-timer();
