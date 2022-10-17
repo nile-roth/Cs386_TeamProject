@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<link href="main.css" rel="stylesheet">
@@ -15,19 +16,21 @@
 			<br>
 			<h1>SHIFT CLOCK</h1> 
 			<div class="time"> 
-				00:00:00 
+				<span id ="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
 			</div>
 			<div class="controls">
-				<button type="submit">PAUSE SHIFT</button>
+				<button type="submit" id="start">START SHIFT</button>
+				<button type="submit" id="pause">PAUSE SHIFT</button>
 				<a href="shift.html">
-				<button type="submit">FINISH SHIFT</button>
+				<button type="submit" id="end">FINISH SHIFT</button>
 				</a>
 				<a href="index.html">
-					<button type="submit">CANCEL SHIFT</button> 
+					<button type="submit" id="reset">CANCEL SHIFT</button> 
 				</a>
 			</div>
 		</div>
 		
-		<script src="main.js"></script>
 	</body>
+	
 </html>
+<script src="main.js"></script>
