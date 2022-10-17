@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script>
+function link() {
+	wage = document.getElementById("wage").value;
+	window.location ='main.html?wage=' +wage;
+}
+</script>
+
 <html>
 	<head>
 		<link href="main.css" rel="stylesheet">
@@ -15,10 +22,8 @@
 				<form>
 					<input type="number" value="15.00" id="wage" step="0.05"><br>
 				</form>
-			<h1><a href="main.html">START SHIFT</a></h1>
+			<button onclick="link()">START SHIFT</button>
 		</div>
 	
-		
-		<script src="main.js"></script>
 	</body>
 </html>
