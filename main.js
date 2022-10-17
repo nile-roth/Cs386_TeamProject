@@ -1,80 +1,71 @@
 //Variables
-const time_num = document.querySelector('.watch .time');
-const wage_num = document.querySelector('.watch .wage');
-const pause_btn = document.getElementById("pause");
-const end_btn = document.getElementById("end");
-const reset_btn = document.getElementById("Reset");
-const start_btn = document.getElementById("start");
-const wage = document.getElementById("wage").value;
-
-let seconds = 0;
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const wage = parseFloat(urlParams.get('wage'));
+const pause_btn = document.getElementById('pause');
+const end_btn = document.getElementById('end');
+const reset_btn = document.getElementById('reset');
+const start_btn = document.getElementById('start');
+let OutHour = document.getElementById('hour');
+let OutMin = document.getElementById('minute');
+let OutSec = document.getElementById('second');
+let hours = 00;
+let minutes = 00;
+let seconds = 00;
 let interval = null;
-let cps = (wage * 100) / 3600;
 
 //Event Listeners
-pause_btn.addEventListener("click", pause);
-reset_btn.addEventListener("click", reset);
+end_btn.addEventListener("click", () => {
+	clearInterval(interval);
+	interval = null;
+});
+pause_btn.addEventListener("click", () => {
+	clearInterval(interval);
+	interval = null;
+});
+reset_btn.addEventListener("click", () => {
+	clearInterval(interval);
+	seconds = 0;
+	OutSec.innerHTML = seconds;
+});
+start_btn.addEventListener("click", () => {
+	clearInterval(interval);
+	interval = setInterval(timer, 1000);
+});
 
 //counting seconds
 function timer () {
 	seconds++;
 	
-	let hrs = Math.floor( seconds / 3600 );
-	let mins = Math.floor( (seconds - (hrs * 3600)) / 60 );
-	let secs = seconds % 60;
-
-	if (secs < 10) secs = "0" + secs;
-	if (mins < 10) mins = "0" + mins;
-	if (hrs < 10) hrs = "0" + hrs;
-	
-	time_num.innerText = '${hrs}:${mins}:${secs}';
-}
-
-//counting income
-function wage () {
-	seconds++;
-	
-	let secs = seconds % 60;
-	let cents = secs * cps ;
-	
-	if (cents >= 100) {
-		dols++;
-		cents = 0;
+	if (seconds < 10){
+		OutSec.innerHTML = "0" + seconds;
 	}
-	wage_num.innerText = '${dols}.${cents}';
 	
-}
-
-//stop timers
-function pause () {
-	clearInterval(interval);
-	interval = null;
-}
-
-//reset timer
-function reset () {
-	pause();
-	seconds = 0;
-	time_num.innerText = "00:00:00";
-}
-
-//count money
-function money_count ()
-{
-	seconds ++;
-	
-	let cents = seconds 
-	if (secs < 10) secs = "0" + secs;
-	if (mins < 10) mins = "0" + mins;
-	if (hrs < 10) hrs = "0" + hrs;
-	
-	time_num.innerText = '${hrs}:${mins}:${secs}';
-}
-
-//start button
-function start () {
-	if (interval) {
-		return
+	if (seconds > 9){
+		OutSec.innerHTML = seconds;
 	}
-	interval = setInterval(timer,500);
+	
+	if (seconds > 59){
+		minutes++;
+		OutMin.innerHTML = "0" + minutes;
+		seconds = 0;
+		OutSec.innerHTML = "0" + seconds;
+	}
+	
+	if (minutes > 9) {
+		OutMin.innerHTML = minutes;
+	}
+	
+	if (minutes > 59) {
+		hours++;
+		OutHour.innerHTML = "0" + hours;
+		minutes = 0;
+		OutMin.innerHTML = "0" + minutes;
+	}
+	
+	if (hours > 9) {
+		OutHour.innerHTML = hours;
+	}
 }
+clearInterval(interval);
+interval = setInterval(timer, 1000);
