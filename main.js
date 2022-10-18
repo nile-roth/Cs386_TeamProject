@@ -2,13 +2,21 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const wage = parseFloat(urlParams.get('wage'));
+const cps = (wage * 100) / 3600;
+
 const pause_btn = document.getElementById('pause');
 const end_btn = document.getElementById('end');
 const reset_btn = document.getElementById('reset');
 const start_btn = document.getElementById('start');
+
 let OutHour = document.getElementById('hour');
 let OutMin = document.getElementById('minute');
 let OutSec = document.getElementById('second');
+let OutDoll = document.getElementById('dollars');
+let OutCent = document.getElementById('cents');
+
+let dollar = 0;
+let cent = 00;
 let hours = 00;
 let minutes = 00;
 let seconds = 00;
@@ -67,5 +75,29 @@ function timer () {
 		OutHour.innerHTML = hours;
 	}
 }
+
+//counting dollas
+function dollCount (wage) {
+	cent = cent + cps;
+	let roundCent = Math.round(cent);
+	
+	if (cent < 10){
+		OutCent.innerHTML = "0" + roundCent;
+	}
+	
+	if (cent > 9){
+		OutCent.innerHTML = roundCent;
+	}
+	
+	if (cent > 99){
+		dollar++;
+		OutDoll.innerHTML = dollar;
+		cent = cent - 100;
+		roundCent = Math.round(cent);
+		OutCent.innerHTML = roundCent;
+	}
+	
+}
 clearInterval(interval);
 interval = setInterval(timer, 1000);
+interval = setInterval(dollCount, 1000);
