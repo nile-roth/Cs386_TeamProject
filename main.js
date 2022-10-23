@@ -44,6 +44,7 @@ start_btn.addEventListener("click", () => {
 });
 
 //counting seconds
+//here is the clock function and it is called at the end to show the working time. This function is called every 1000 ms so that it portrays a stopwatch 
 function timer () {
 	seconds++;
 	
