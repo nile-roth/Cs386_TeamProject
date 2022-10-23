@@ -1,2 +1,0 @@
-# Cs386_TeamProject
-
