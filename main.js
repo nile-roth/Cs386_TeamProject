@@ -97,6 +97,9 @@ function dollCount (wage) {
 		OutCent.innerHTML = roundCent;
 	}
 	
+	if (roundCent = 0){
+		OutCent.innerHTML = "0" + roundCent;
+	}
 }
 clearInterval(interval);
 interval = setInterval(timer, 1000);
