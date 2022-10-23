@@ -1,4 +1,5 @@
 //Variables
+//we first create a variable assigned to window location and insert it into the urlParam.  We then set that value to a variable called wage in the js file.
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const wage = parseFloat(urlParams.get('wage'));
@@ -97,6 +98,9 @@ function dollCount (wage) {
 		OutCent.innerHTML = roundCent;
 	}
 	
+	if (roundCent = 0){
+		OutCent.innerHTML = "0" + roundCent;
+	}
 }
 clearInterval(interval);
 interval = setInterval(timer, 1000);

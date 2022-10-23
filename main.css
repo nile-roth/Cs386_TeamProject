@@ -32,6 +32,7 @@ body {
 }
 
 .wage{
+	font-size: 2rem;
 	text-align: center;
 	background-color: var(--green);
 	width: 100%;
@@ -49,6 +50,9 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.input {
+	text-align: center;
 }
 
 .controls button {
