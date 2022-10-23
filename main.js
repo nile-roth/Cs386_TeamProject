@@ -3,6 +3,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const wage = parseFloat(urlParams.get('wage'));
+//this is a conversion from wage (in dollars per hour) to the cents per second
 const cps = (wage * 100) / 3600;
 
 const pause_btn = document.getElementById('pause');
