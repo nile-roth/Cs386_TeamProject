@@ -10,36 +10,36 @@ calculations.
 ## **2. Implemented requirements**
 1).
    Requirement: The interface shall prompt the user for their hourly wage upon application startup.
-   Issue: https://github.com/nilewuzhere/Cs386_TeamProject/issues/38
-	 Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/41
+   Issue: * https://github.com/nilewuzhere/Cs386_TeamProject/issues/38
+	 Pull Request: * https://github.com/nilewuzhere/Cs386_TeamProject/pull/41
    Implemented by: Nile Roth
  	 Approved by: Naima Ontiveros
 	 Print screen: 
-   ![UML]()
+   ![UML](https://i.ibb.co/34FcrkC/image.png)
    
 2).
   Requirement: The display shall show a simple timer.
-  Issue: https://github.com/nilewuzhere/Cs386_TeamProject/issues/20
-  Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/42
+  Issue: * https://github.com/nilewuzhere/Cs386_TeamProject/issues/20
+  Pull Request: * https://github.com/nilewuzhere/Cs386_TeamProject/pull/42
   Implemented by: Nile Roth
   Approved by: Naima Ontiveros
   Print screen: 
-  ![UML](https://ibb.co/BqMmqj4/image.png)
+  ![UML](https://i.ibb.co/D52N5kG/2.png)
   
 
 3).
   Requirement: The interface shall provide users a way to start, pause, stop, or reset the timer.
-  Issue: https://github.com/nilewuzhere/Cs386_TeamProject/issues/23
-	Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/43
+  Issue: * https://github.com/nilewuzhere/Cs386_TeamProject/issues/23
+	Pull Request: * https://github.com/nilewuzhere/Cs386_TeamProject/pull/43
   Implemented by: Nile Roth
 	Approved by: Naima Ontiveros
 	Print screen: 
-  ![UML](https://ibb.co/BqMmqj4/image.png)
+  ![UML](https://i.ibb.co/JQCqjVW/image.png)
   
 4). 
   Requirement: The application shall calculate the user’s earnings per second.
-  Issue: https://github.com/nilewuzhere/Cs386_TeamProject/issues/21
-	Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/44
+  Issue: * https://github.com/nilewuzhere/Cs386_TeamProject/issues/21
+	Pull Request: * https://github.com/nilewuzhere/Cs386_TeamProject/pull/44
 	Implemented by: Nile Roth
 	Approved by: Naima Ontiveros
 	Print screen: 
