@@ -14,7 +14,7 @@ calculations.
    Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/41  
    Implemented by: Nile Roth  
    Approved by: Naima Ontiveros  
-   Print screen: 
+   Print screen:  
    ![UML](https://i.ibb.co/34FcrkC/image.png)
    
 2).
@@ -85,7 +85,7 @@ copyleft and allow these same permissions.
 ## **8. Readme File**  
   
   
-## **9. Look & feel  
+## **9. Look & feel**  
   
 For our user interface, we decided to go with a very simple layout for aesthetics and usability  
 purposes. We want the user to feel trendy, sophisticated, but with a sense of childlike wonder. One  
