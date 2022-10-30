@@ -5,6 +5,11 @@ Money Monkey is a payroll tracking app that allows hourly wage workers to track 
 
 ## Getting Started
 
+* Clone the respository in VS code
+
+* Commit changes / Make a pull request to main branch
+
+
 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
