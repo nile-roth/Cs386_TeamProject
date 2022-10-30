@@ -11,14 +11,11 @@ Money Monkey is a payroll tracking app that allows hourly wage workers to track 
 
 
 
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 Visual Studio 2022's latest release should be installed.
  
 How to install VSC:
-  
+  * Follow the guide on     https://code.visualstudio.com/docs/setup/windows#:~:text=Installation%201%20Download%20the%20Visual%20Studio%20Code%20installer,Code%20is%20installed%20under%20C%3A%5CUsers%5C%20%7BUsername%7D%5CAppData%5CLocal%5CPrograms%5CMicrosoft%20VS%20Code
 
 
 What things you need to install the software and how to install them
