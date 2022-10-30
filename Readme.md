@@ -31,21 +31,13 @@ Our code can also be cloned using Git. To install git, use the installer in the 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+1. Go to the website https://www.eclipse.org/ide/
 
-Say what the step will be
+2. Dowwnload the latest version of the Eclipse IDE
 
-```
-Give the example
-```
+3. Open Eclipse and use it for the automated testing.
 
-And repeat
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
@@ -55,21 +47,15 @@ Explain how to run the automated tests for this system
 
 Explain what these tests test and why
 
-```
-Give an example
-```
 
 ### And coding style tests
 
 Explain what these tests test and why
-
-```
-Give an example
-```
+\
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+-Deploy using Azure Web App services.
 
 ## Built With
 * CSS
