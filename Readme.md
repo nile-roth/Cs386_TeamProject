@@ -12,17 +12,22 @@ Money Monkey is a payroll tracking app that allows hourly wage workers to track 
 
 
 ### Prerequisites
-Visual Studio 2022's latest release should be installed.
+Visual Studio 2022's latest release should be installed
+
  
 How to install VSC:
   * Follow the guide on     https://code.visualstudio.com/docs/setup/windows#:~:text=Installation%201%20Download%20the%20Visual%20Studio%20Code%20installer,Code%20is%20installed%20under%20C%3A%5CUsers%5C%20%7BUsername%7D%5CAppData%5CLocal%5CPrograms%5CMicrosoft%20VS%20Code
 
 
-What things you need to install the software and how to install them
+VS Code is supported on the following platforms:
 
-```
-Give examples
-```
+OS X El Capitan (10.11+)
+Windows 8.0, 8.1 and 10, 11 (32-bit and 64-bit)
+Linux (Debian): Ubuntu Desktop 16.04, Debian 9
+Linux (Red Hat): Red Hat Enterprise Linux 7, CentOS 7, Fedora 34
+
+Our code can also be cloned using Git. To install git, use the installer in the following website.
+* https://git-scm.com/download/win
 
 ### Installing
 
