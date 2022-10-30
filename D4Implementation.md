@@ -15,16 +15,16 @@ calculations.
    Implemented by: Nile Roth
  	 Approved by: Naima Ontiveros
 	 Print screen: 
-   ![UML](https://ibb.co/cFqXyMw)
+   ![UML]()
    
 2).
   Requirement: The display shall show a simple timer.
   Issue: https://github.com/nilewuzhere/Cs386_TeamProject/issues/20
   Pull Request: https://github.com/nilewuzhere/Cs386_TeamProject/pull/42
   Implemented by: Nile Roth
-	Approved by: Naima Ontiveros
-	Print screen: 
-  ![UML](https://ibb.co/BqMmqj4)
+  Approved by: Naima Ontiveros
+  Print screen: 
+  ![UML](https://ibb.co/BqMmqj4/image.png)
   
 
 3).
@@ -34,7 +34,7 @@ calculations.
   Implemented by: Nile Roth
 	Approved by: Naima Ontiveros
 	Print screen: 
-  ![UML](https://ibb.co/BqMmqj4)
+  ![UML](https://ibb.co/BqMmqj4/image.png)
   
 4). 
   Requirement: The application shall calculate the user’s earnings per second.
@@ -43,5 +43,5 @@ calculations.
 	Implemented by: Nile Roth
 	Approved by: Naima Ontiveros
 	Print screen: 
-  ![UML](https://ibb.co/z6N9yFt)
+  ![UML](https://i.ibb.co/kmMbRJP/image.png)
 
