@@ -5,7 +5,7 @@ Thank you for investing your time in contributing to our project! Any contributi
 
 ## New contributor guide
 
-To get an overview of the project, read the [README](README.md).
+To get an overview of the project, read the [README](https://github.com/nilewuzhere/Cs386_TeamProject/blob/main/Readme.md).
 
 ### Issues
 
