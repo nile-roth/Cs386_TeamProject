@@ -1,4 +1,5 @@
 # Money Monkey 
+Version: v1.0: https://github.com/nilewuzhere/Cs386_TeamProject/releases/tag/v1.0
 
 Money Monkey is a payroll tracking app that allows hourly wage workers to track the amount of money they have made on their shift, to ensure that the worker is being paid the correct amount and to mitigate any potential error with their paycheck; unlike ADP, Money Monkey has an aesthetic UI, which make the user feel trendy while keeping track of their income. 
 
