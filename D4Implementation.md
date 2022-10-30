@@ -83,7 +83,10 @@ copyleft and allow these same permissions.
   
   
 ## **8. Readme File**  
-  
+Readme: https://github.com/nilewuzhere/Cs386_TeamProject#readme  
+Code of conduct: https://github.com/nilewuzhere/Cs386_TeamProject/blob/main/CODE_OF_CONDUCT.md  
+Contributing: https://github.com/nilewuzhere/Cs386_TeamProject/blob/main/CONTRIBUTING.md
+
   
 ## **9. Look & feel**  
   
