@@ -45,10 +45,13 @@ calculations.
 	Print screen:  
 	![UML](https://i.ibb.co/kmMbRJP/image.png)
 	
-## **2. Implemented requirements**
+## **2. Tests**
 3.1.1: We used the test framework Mocha to test our code for this release.
+
 3.1.2: 
+
 3.1.3: 
+
 3.1.4: Automated Test Result:
 ![image](https://user-images.githubusercontent.com/102484271/198942772-30327e48-b20d-4ed9-bd23-cbe4a898bcae.png)
 
