@@ -48,7 +48,7 @@ calculations.
 ## **2. Tests**
 3.1.1: We used the test framework Mocha to test our code for this release.
 
-3.1.2: 
+3.1.2: Automated unit tests are located here: [a link](https://github.com/nilewuzhere/Cs386_TeamProject/blob/D4/test.js)
 
 3.1.3: 
 
