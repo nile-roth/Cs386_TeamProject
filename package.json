@@ -1,0 +1,29 @@
+{
+  "name": "cs386_teamproject",
+  "version": "1.0.0",
+  "description": "Money Monkey Site",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilewuzhere/Cs386_TeamProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilewuzhere/Cs386_TeamProject/issues"
+  },
+  "homepage": "https://github.com/nilewuzhere/Cs386_TeamProject#readme",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  },
+  "devDependencies": {
+    "jsdom": "^20.0.2",
+    "jsdom-global": "3.0.2"
+  }
+}
