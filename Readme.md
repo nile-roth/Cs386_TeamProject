@@ -43,15 +43,28 @@ Our code can also be cloned using Git. To install git, use the installer in the 
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+From Scratch:
+1. Navigate to the project directory on the command line.
+2. Install Nodejs and npm.
+3. Initialize npm with the command: npm init, and provide information as prompted.
+4. Install Mocha on the command line via npm with the command: npm install mocha
+5. Make a new directory called test within the project directory.
+6. Copy the file test.js into the test directory.
+7. Navigate back to the project directory and install jsdom with the command: npm install --save-dev --save-exact jsdom jsdom-global.
+8. Run the tests with the command: ./node_modules/mocha/bin/mocha.js -r jsdom-global/register
 
-Explain what these tests test and why
+Alternatively: 
+1. Make a local copy of this repository
+2. In the project directory, run the command: npm install
+3. Run the tests with the command: ./node_modules/mocha/bin/mocha.js -r jsdom-global/register
 
-
-### And coding style tests
-
-Explain what these tests test and why
-\
+## Current Tests
+1. setWage
+ Tests that wage will be successfully set to a value entered by the user.
+2. testInit
+ Tests that dollars and cents will be initialized to the proper values to avoid error in paycheck calculation.
+3. testCount (future release)
+ Tests that wage will increment by the proper amount per second on the wage clock as determined by the hourly wage given by the user.
 
 ## Deployment
 
