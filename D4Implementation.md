@@ -48,9 +48,9 @@ calculations.
 ## **2. Tests**
 3.1.1: We used the test framework Mocha to test our code for this release.
 
-3.1.2: Automated unit tests are located here: [a link](https://github.com/nilewuzhere/Cs386_TeamProject/blob/D4/test.js)
+3.1.2: Automated unit tests are located [here](https://github.com/nilewuzhere/Cs386_TeamProject/blob/D4/test.js)
 
-3.1.3: 
+3.1.3: Example: [Our first test](https://github.com/nilewuzhere/Cs386_TeamProject/blob/D4/test.js), run for [this page](https://moneymonkeys.azurewebsites.net/Home/main?wage=36.00), will test that a wage can properly be recorded from the user to be used by the wage clock.
 
 3.1.4: Automated Test Result:
 
