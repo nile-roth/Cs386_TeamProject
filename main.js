@@ -22,25 +22,39 @@ let cent = 00;
 let hours = 00;
 let minutes = 00;
 let seconds = 00;
-let interval = null;
+let t_interval = null;
+let d_interval = null;
 
 //Event Listeners
 end_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = null;
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 });
 pause_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = null;
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 });
 reset_btn.addEventListener("click", () => {
-	clearInterval(interval);
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 	seconds = 0;
 	OutSec.innerHTML = seconds;
 });
 start_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = setInterval(timer, 1000);
+    if (t_interval == null)
+    {
+        t_interval = setInterval(timer, 1000);
+    }
+    if (d_interval == null)
+    {
+        d_interval = setInterval(dollCount, 1000);
+    }
 });
 
 //counting seconds
@@ -104,6 +118,5 @@ function dollCount (wage) {
 		OutCent.innerHTML = "0" + roundCent;
 	}
 }
-clearInterval(interval);
-interval = setInterval(timer, 1000);
-interval = setInterval(dollCount, 1000);
+t_interval = setInterval(timer, 1000);
+d_interval = setInterval(dollCount, 1000);
