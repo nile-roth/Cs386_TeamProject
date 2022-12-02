@@ -4,6 +4,7 @@
 	--mnygreen: #a7b89a;
 	--grey: #595656;
 	--offwhite: #fbfbfb; 
+	--pixel-size: 2;
 }
 
 * {
@@ -121,3 +122,29 @@ button:active {
 	background-color: var(--green);
 	color: var(--brown);
 }
+
+.Character {
+	width: calc(46px * var(--pixel-size));
+	height: calc(45px * var(--pixel-size));
+	overflow: hidden;
+	position: relative;
+	left: 300px;
+ }
+ 
+ .Character_spritesheet {
+	animation: moveSpriteSheet 2.5s steps(11) infinite;
+	width: calc(528px * var(--pixel-size));
+ }
+ 
+ .pixelart {
+	image-rendering: pixelated;
+ }
+ 
+ @keyframes moveSpriteSheet {
+	from {
+	   transform: translate3d(0px, 0, 0);
+	}
+	to {
+	   transform: translate3d(-100%, 0, 0);
+	}
+ }
