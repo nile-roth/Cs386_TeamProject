@@ -30,6 +30,11 @@
 body {
 	background: var(--offwhite);
 	font-family: raleway;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
 }
 
 .watch{
@@ -40,6 +45,9 @@ body {
 	margin: 64px;
 	padding: 1rem 2rem;
 	border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 .mainTitle {
@@ -57,6 +65,9 @@ body {
 	height: 25%;
 	font-family: raleway;
 	font-size: 1.25rem;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 nav{
@@ -64,13 +75,15 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 0;
+	padding: 10px 0;
+
 }
 
 nav ul li{
-	display: inline-block;
+  display: inline-block;
 	list-style: none;
 	margin: 10px 30px;
+
 }
 
 nav ul li a{
