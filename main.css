@@ -114,6 +114,20 @@ nav ul li a{
 }
 .input {
 	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.input button{
+  font-family: raleway;
+  font-size: medium;
+  font-weight: bold;
+  user-select: none;
+  background-color: var(--mnygreen);
+  color:#051d0e;
+  padding: 10px 30px;
+  border-radius: 15px;
 }
 
 .controls button {
@@ -125,6 +139,44 @@ nav ul li a{
 	border-radius: 10px;
 	transition: 0.4s;
 	font-family: raleway;
+}
+
+.login {
+  padding: 50px 50px;
+}
+
+.login button{
+  font-family: raleway;
+  font-size: medium;
+  font-weight: bold;
+  user-select: none;
+  background-color: var(--mnygreen);
+  color:#051d0e;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+
+.unameClass{
+  padding: 10px 10px;
+}
+
+.unameClass img{
+  margin-top: 50px;
+}
+
+.pwdClass{
+  padding: 10px 10px;
+}
+
+.help{
+  padding-top: 100px;
+}
+
+.help button{
+  background-color: #fbfbfb;
+  padding: 10px;
+  font-family: raleway;
+  border-radius: 15px;
 }
 
 button:hover {

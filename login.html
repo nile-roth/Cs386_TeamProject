@@ -18,24 +18,17 @@ function link() {
 			<img src="bananacoin.png" alt="monkey" width = "150" height = "150" />
 	  </div> 
 
-		<div class="input">
-			<h3>Type hourly wage below</h3><br>
-				<form>
-					<input type="number" value="15.00" id="wage" step="0.05" min="0" max="1000"><br>
-				</form>
+    <div class="login">
       <div class="unameClass">
-			  <button onclick="link()">START SHIFT</button>
+        <label for="uname"><b>Username </b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
       </div>
-		</div>
 
-    <div class="help">
-      <img src="monkeyLogin.png" alt="monkey"/ width="150" height="150" class="help">
-
-
-        <a href="login.html">
-          <button>Login Here</button>
-        </a>
-      
+      <div class="pwdClass">
+      <label for="pwd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pwd" required>
+      </div>
+      <button type="submit">login</button>
     </div>
 	
 	</body>
