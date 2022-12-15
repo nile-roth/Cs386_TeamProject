@@ -22,58 +22,72 @@ let cent = 00;
 let hours = 00;
 let minutes = 00;
 let seconds = 00;
-let interval = null;
+let t_interval = null;
+let d_interval = null;
 
 //Event Listeners
 end_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = null;
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 });
 pause_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = null;
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 });
 reset_btn.addEventListener("click", () => {
-	clearInterval(interval);
+	clearInterval(t_interval);
+	t_interval = null;
+    clearInterval(d_interval);
+	d_interval = null;
 	seconds = 0;
 	OutSec.innerHTML = seconds;
 });
 start_btn.addEventListener("click", () => {
-	clearInterval(interval);
-	interval = setInterval(timer, 1000);
+    if (t_interval == null)
+    {
+        t_interval = setInterval(timer, 1000);
+    }
+    if (d_interval == null)
+    {
+        d_interval = setInterval(dollCount, 1000);
+    }
 });
 
 //counting seconds
-//here is the clock function and it is called at the end to show the working time. This function is called every 1000 ms so that it portrays a stopwatch 
+//here is the clock function and it is called at the end to show the working time. This function is called every 1000 ms so that it portrays a stopwatch
 function timer () {
 	seconds++;
-	
+
 	if (seconds < 10){
 		OutSec.innerHTML = "0" + seconds;
 	}
-	
+
 	if (seconds > 9){
 		OutSec.innerHTML = seconds;
 	}
-	
+
 	if (seconds > 59){
 		minutes++;
 		OutMin.innerHTML = "0" + minutes;
 		seconds = 0;
 		OutSec.innerHTML = "0" + seconds;
 	}
-	
+
 	if (minutes > 9) {
 		OutMin.innerHTML = minutes;
 	}
-	
+
 	if (minutes > 59) {
 		hours++;
 		OutHour.innerHTML = "0" + hours;
 		minutes = 0;
 		OutMin.innerHTML = "0" + minutes;
 	}
-	
+
 	if (hours > 9) {
 		OutHour.innerHTML = hours;
 	}
@@ -83,15 +97,15 @@ function timer () {
 function dollCount (wage) {
 	cent = cent + cps;
 	let roundCent = Math.round(cent);
-	
+
 	if (cent < 10){
 		OutCent.innerHTML = "0" + roundCent;
 	}
-	
+
 	if (cent > 9){
 		OutCent.innerHTML = roundCent;
 	}
-	
+
 	if (cent > 99){
 		dollar++;
 		OutDoll.innerHTML = dollar;
@@ -99,11 +113,10 @@ function dollCount (wage) {
 		roundCent = Math.round(cent);
 		OutCent.innerHTML = roundCent;
 	}
-	
+
 	if (roundCent = 0){
 		OutCent.innerHTML = "0" + roundCent;
 	}
 }
-clearInterval(interval);
-interval = setInterval(timer, 1000);
-interval = setInterval(dollCount, 1000);
+t_interval = setInterval(timer, 1000);
+d_interval = setInterval(dollCount, 1000);
